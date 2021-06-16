@@ -1,0 +1,27 @@
+{
+  "name": "generic-connectivity",
+  "version": "1.0.0",
+  "description": "Central Backend system for connecting and routing external systems to annotate app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandru11/generic-connectivity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandru11/generic-connectivity/issues"
+  },
+  "homepage": "https://github.com/Alexandru11/generic-connectivity#readme",
+  "dependencies": {
+    "@sap/xb-msg": "^0.9.12",
+    "@sap/xb-msg-amqp-v100": "^0.9.51",
+    "@sap/xb-msg-env": "^0.9.8",
+    "@sap/xsenv": "^3.1.0",
+    "express": "^4.17.1"
+  }
+}
