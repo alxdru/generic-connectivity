@@ -30,17 +30,17 @@ class Broker {
     
             const handler = () => {
                 console.log('publishing message: ' + message + ' on topic: ' + task.topic);
-    
-                if (!stream.write(message)) {
+                
+                const messagePayload = {
+                    payload: Buffer.from(message)
+                };
+
+                if (!stream.write(messagePayload)) {
                     console.log('wait');
                     return;
                 }
-
-                handler();
             };
-    
-            stream.on('drain', handler);
-    
+        
             handler();
         });
     }
